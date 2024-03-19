@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hora de codar 3</title>
+</head>
+
+<body>
+
+    <script>
+        //1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.
+
+        /*var valor1 = parseInt(prompt("Digite um número: "));
+        var valor2 = parseInt(prompt("Digite o segundo número: "));
+
+        while (valor2 <= 0 ){
+            alert(" Aviso: o valor do segundo número inserido precisa ser maior que 0, por favor digite novamente: ")
+            valor2 = parseInt(prompt("Digite novamente:"))
+        }
+
+        var resultado = valor1 / valor2;
+        alert(" Então o resultado da divisão desses 2 valores é igual a: " + resultado)*/
+
+
+
+        //2 - Crie uma bomba relógio (usando somente código - para deixar claro!) cuja contagem regressiva vá de 30 a 0. Utilize "document.write" para escrever em tela e no final da repetição escreva "EXPLOSÃO".
+
+        /*var i = 30
+
+        while (i > 0) { 
+        var texto = "Contagem regressiva " + i + " Quase lá" + "<br>"
+        document.write(texto);
+        i--;
+
+        }
+
+        document.write("EXPLOSÃO TCHACABUM!!");*/
+
+
+        //exercício 3 3 - Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente.
+        //Exemplo: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+
+        /*document.write ("Contagem regressiva " +  "<br>")
+        var i = 10
+        while (i >= 1) {
+            
+            document.write(i + "<br>");
+            i--;
+            
+        }*/
+
+        // 4 Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).
+
+        /*var soma = 0
+         var contador =  0;
+         var numero = 15;
+         
+ 
+         while ( numero <= 100){
+             soma += numero;
+             contador ++;
+             numero ++;
+ 
+         }
+ 
+         var media = soma / contador;
+ 
+         alert(" A media aritimética dos números é igual a : " + media);*/
+
+
+        //5  Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
+        /*var num1 = parseInt(prompt(" Digite um número: "));
+        var num2 = parseInt(prompt("Digite um segundo número: "));
+
+        var soma = 0;
+        var contador = 0;
+
+        var atual = num1;
+        
+        while( atual <= num2 ) {
+            soma += atual;
+            contador ++;
+            atual ++;
+
+        }
+
+        var media = soma / contador;
+        document.write(" A media aritimética entre os números " + num1 + " e " + num2 + " é igual a: " + media);
+
+        alert(" A media aritimética entre os números " + num1+ " e " + num2 + " é igual a: " + media);*/
+
+        //6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.//
+
+
+        /*
+        var totalAprovados = 0;
+        var continuar;
+
+        while (continuar !== 'N') {
+            var nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+            var nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+            var media = (nota1 + nota2) / 2;
+
+            if (media >= 9.5) {
+                totalAprovados++;
+            }
+
+            continuar = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+        }
+
+        document.write("Quantidade de alunos aprovados: " + totalAprovados);*/
+
+        /* 7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+        Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. */
+
+        /*var totalNotas = 6;
+        var soma = 0;
+        var i = 0;
+
+        while (i < totalNotas) {
+            var nota = parseFloat(prompt("Digite a nota " + (i + 1) + " (de 0 a 10):"));
+
+            while (isNaN(nota) || nota < 0 || nota > 10) {
+                alert("Por favor, digite uma nota válida de 0 a 10.");
+                nota = parseFloat(prompt("Digite novamente a nota " + (i + 1) + " (de 0 a 10):"));
+            }
+
+            soma += nota;
+            i++;
+        }
+
+        var media = soma / totalNotas;
+        document.write("A média do aluno é: " + media);*/
+
+        /* 8 Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO.
+        N  é um valor informado pelo usuário */
+
+        /*var n = parseInt(prompt("Digite um número: "));
+        var i = 1;
+
+        while( i <= n) {
+            document.write(i + "<br>");
+            i++;
+        }*/
+
+        /*  9 Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100. */
+        /*var numero = 100;
+        var contador = 0;
+
+        while(contador < 10){
+            document.write(numero + "<br>");
+            numero++;
+            contador++;
+        }*/
+
+        /* 10 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário. */
+
+        /*var n = parseInt(prompt("Digite um número: "));
+        var i = 1;
+
+        while (i <= n){
+            document.write("Tabuada do " + i + "<br>");
+            
+            var j = 1;
+            while( j <= 10){
+                document.write(i + " x " + j + " = " + ( i * j ) + "<br>");
+                j++;
+            }
+            document.write("<br>");
+            i++;
+        }*/
+
+        /* 11 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.*/
+
+        var dentroIntervalo = 0;
+        var foraIntervalo = 0;
+        var contador = 0;
+
+        while (contador < 10) {
+            var valor = parseInt(prompt("Digite o valor " + (contador + 1) + ":"));
+
+            if (valor >= 24 && valor <= 42) {
+                dentroIntervalo++;
+            } else {
+                foraIntervalo++;
+            }
+
+            contador++;
+        }
+
+        document.write("Valores dentro do intervalo [24, 42]: " + dentroIntervalo + "<br>");
+        document.write("Valores fora do intervalo [24, 42]: " + foraIntervalo + "<br>");
+
+
+    </script>
+
+</body>
+
+</html>
