@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 4</title>
+</head>
+
+<body>
+    <script>
+
+        /* 1- 1
+        Crie um programa onde o usuário possa cadastrar estudantes sem limites, e, em seguida, Se o usuário digitar "PARE" o programa deve exibir a quantidade de estudantes cadastrados e a lista com cada um deles. */
+
+
+        /*let estudantes = [];
+
+        
+        while (true) {
+            let nome = prompt("Digite o nome do estudante (ou 'PARE' para finalizar):");
+            if (nome.toUpperCase() === "PARE") {
+                break;
+            }
+            estudantes.push(nome);
+        }
+
+        
+        console.log("Quantidade de estudantes cadastrados: " + estudantes.length);
+
+       
+        console.log("Lista de estudantes cadastrados:");
+        for (let i = 0; i < estudantes.length; i++) {
+            console.log((i + 1) + ". " + estudantes[i]);
+        }*/
+        
+        /*2
+        Crie uma array de planetas que inclua "Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"  e, em seguida, peça ao usuário para digitar o nome de um planeta. 
+        Verifique se o planeta que o usuário informou está na array e informe ao usuário.*/
+
+        /*function planetasdalista () {
+
+            var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"];
+
+            var planeta = prompt("Digite o nome de alguns desses planetas: ");
+
+            if (planetas.includes(planeta)) {
+                alert(" O planeta " + planeta + " está na nossa lista. ");
+            } else {
+                alert(" O planeta " + planeta + " Não está na nossa lista. ");
+            }
+
+            var inicio = confirm("Deseja retornar ao inicio? ")
+            if (inicio) {
+                planetasdalista();
+            }
+        }
+
+        planetasdalista();*/
+
+
+        /* 3
+            Vamos criar uma lista de compras. 
+
+            Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.
+
+            Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". 
+
+            Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
+
+            Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado". 
+
+            Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".*/
+
+        /*let frutas = ["Maça", "Banana", "Laranja", "Uva"];
+        let sfruta;
+
+        
+        do {
+            sfruta = prompt("Digite a fruta que deseja comprar:");
+        } while (!frutas.includes(sfruta));
+
+        let estoque = false;
+
+
+        for (let j = 0; j < frutas.length; j++) {
+            if (sfruta === frutas[j]) {
+                estoque = true;
+                frutas.splice(j, 1);
+                alert("Fruta comprada");
+                break;
+            }
+        }
+
+        if (!estoque) {
+            alert("A fruta não está mais disponível em nosso estoque.");
+        }
+
+        if (frutas.length === 0) {
+            alert("Todos os itens estão fora de estoque :(");
+        }
+
+        console.log("Frutas restantes no estoque: ", frutas);
+        document.write("Frutas restantes no estoque: ", frutas);*/
+
+
+
+
+    </script>
+</body>
+
+</html>
